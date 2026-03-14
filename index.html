@@ -131,64 +131,50 @@ toggle.onclick = function() {
   panel.style.display = panel.style.display === 'flex' ? 'none' : 'flex';
 };
 
+// City info database
+const destinations = {
+  "antalya": "Antalya 🇹🇷 is a beautiful Mediterranean resort city known for turquoise beaches, luxury resorts and historic old town streets. Global Picks helps travellers find excellent value hotels across Antalya.",
+  "bali": "Bali 🇮🇩 offers tropical beaches, temples, rice terraces and vibrant culture. Global Picks helps travellers discover affordable hotels across Bali's best locations.",
+  "bangkok": "Bangkok 🇹🇭 is a vibrant city famous for street food, temples, markets and nightlife. Global Picks can help you find budget-friendly hotels across Bangkok.",
+  "barcelona": "Barcelona 🇪🇸 is known for Gaudí architecture, sunny beaches and lively culture. Global Picks helps travellers find great hotel deals across the city.",
+  "cape town": "Cape Town 🇿🇦 offers incredible scenery with Table Mountain, beaches and vineyards. Global Picks helps travellers find affordable stays across Cape Town.",
+  "dubai": "Dubai 🇦🇪 is known for luxury hotels, desert adventures and the iconic Burj Khalifa. Global Picks helps travellers find excellent hotel deals across Dubai.",
+  "hurghada": "Hurghada 🇪🇬 is a Red Sea resort destination famous for diving, snorkelling and beautiful beaches. Global Picks helps travellers find great value resorts in Hurghada.",
+  "istanbul": "Istanbul 🇹🇷 is a historic city where Europe meets Asia, famous for mosques, bazaars and rich culture. Global Picks helps travellers find hotels across Istanbul.",
+  "london": "London 🇬🇧 offers historic landmarks like Big Ben, Buckingham Palace and world class museums. Global Picks helps travellers find affordable hotels across London.",
+  "mombasa": "Mombasa 🇰🇪 is a tropical coastal city known for white sand beaches, coral reefs and Swahili culture. Global Picks helps travellers find beachfront hotels in Mombasa.",
+  "new york": "New York 🇺🇸 is famous for Times Square, Central Park, Broadway and iconic skyscrapers. Global Picks helps travellers find great hotel deals across New York.",
+  "paris": "Paris 🇫🇷 is famous for the Eiffel Tower, charming cafés and world class museums like the Louvre. Global Picks helps travellers find great hotels across Paris.",
+  "phuket": "Phuket 🇹🇭 is Thailand's largest island known for tropical beaches, nightlife and island hopping. Global Picks helps travellers find excellent resorts in Phuket.",
+  "santorini": "Santorini 🇬🇷 is famous for whitewashed villages, blue domes and breathtaking sunsets over the Aegean Sea. Global Picks helps travellers find beautiful stays across Santorini.",
+  "sharm": "Sharm El Sheikh 🇪🇬 is a popular Red Sea destination known for diving, coral reefs and luxury resorts. Global Picks helps travellers find great hotel deals in Sharm.",
+  "tokyo": "Tokyo 🇯🇵 is a dynamic city blending futuristic technology with traditional temples and culture. Global Picks helps travellers find hotels across Tokyo.",
+  "tulum": "Tulum 🇲🇽 is famous for its Caribbean beaches, eco resorts and ancient Mayan ruins overlooking the sea. Global Picks helps travellers find unique stays in Tulum.",
+  "zanzibar": "Zanzibar 🇹🇿 is a tropical island paradise known for white sand beaches, turquoise water and historic Stone Town. Global Picks helps travellers find beachfront hotels across Zanzibar."
+};
+
 send.onclick = function() {
-  const msg = input.value.trim().toLowerCase();
+  let msg = input.value.trim().toLowerCase();
   if (!msg) return;
 
   const div = document.createElement('div');
 
-  // Booking info
+  // Handle 'book' and 'deals' commands
   if (msg === 'book') {
     div.innerHTML = "🌟 Great choice! Global Picks can help you find budget-friendly hotels. Click the WhatsApp button and send your destination and travel dates.";
-  }
-
-  // Destination info
-  else if (msg === 'info antalya') {
-    div.innerHTML = "Antalya 🇹🇷 is a beautiful Mediterranean resort city known for turquoise beaches, luxury resorts and historic old town streets. Global Picks helps travellers find excellent value hotels across Antalya.";
-  } else if (msg === 'info bali') {
-    div.innerHTML = "Bali 🇮🇩 offers tropical beaches, temples, rice terraces and vibrant culture. Global Picks helps travellers discover affordable hotels across Bali's best locations.";
-  } else if (msg === 'info bangkok') {
-    div.innerHTML = "Bangkok 🇹🇭 is a vibrant city famous for street food, temples, markets and nightlife. Global Picks can help you find budget-friendly hotels across Bangkok.";
-  } else if (msg === 'info barcelona') {
-    div.innerHTML = "Barcelona 🇪🇸 is known for Gaudí architecture, sunny beaches and lively culture. Global Picks helps travellers find great hotel deals across the city.";
-  } else if (msg === 'info cape town') {
-    div.innerHTML = "Cape Town 🇿🇦 offers incredible scenery with Table Mountain, beaches and vineyards. Global Picks helps travellers find affordable stays across Cape Town.";
-  } else if (msg === 'info dubai') {
-    div.innerHTML = "Dubai 🇦🇪 is known for luxury hotels, desert adventures and the iconic Burj Khalifa. Global Picks helps travellers find excellent hotel deals across Dubai.";
-  } else if (msg === 'info hurghada') {
-    div.innerHTML = "Hurghada 🇪🇬 is a Red Sea resort destination famous for diving, snorkelling and beautiful beaches. Global Picks helps travellers find great value resorts in Hurghada.";
-  } else if (msg === 'info istanbul') {
-    div.innerHTML = "Istanbul 🇹🇷 is a historic city where Europe meets Asia, famous for mosques, bazaars and rich culture. Global Picks helps travellers find hotels across Istanbul.";
-  } else if (msg === 'info london') {
-    div.innerHTML = "London 🇬🇧 offers historic landmarks like Big Ben, Buckingham Palace and world class museums. Global Picks helps travellers find affordable hotels across London.";
-  } else if (msg === 'info mombasa') {
-    div.innerHTML = "Mombasa 🇰🇪 is a tropical coastal city known for white sand beaches, coral reefs and Swahili culture. Global Picks helps travellers find beachfront hotels in Mombasa.";
-  } else if (msg === 'info new york') {
-    div.innerHTML = "New York 🇺🇸 is famous for Times Square, Central Park, Broadway and iconic skyscrapers. Global Picks helps travellers find great hotel deals across New York.";
-  } else if (msg === 'info paris') {
-    div.innerHTML = "Paris 🇫🇷 is famous for the Eiffel Tower, charming cafés and world class museums like the Louvre. Global Picks helps travellers find great hotels across Paris.";
-  } else if (msg === 'info phuket') {
-    div.innerHTML = "Phuket 🇹🇭 is Thailand's largest island known for tropical beaches, nightlife and island hopping. Global Picks helps travellers find excellent resorts in Phuket.";
-  } else if (msg === 'info santorini') {
-    div.innerHTML = "Santorini 🇬🇷 is famous for whitewashed villages, blue domes and breathtaking sunsets over the Aegean Sea. Global Picks helps travellers find beautiful stays across Santorini.";
-  } else if (msg === 'info sharm') {
-    div.innerHTML = "Sharm El Sheikh 🇪🇬 is a popular Red Sea destination known for diving, coral reefs and luxury resorts. Global Picks helps travellers find great hotel deals in Sharm.";
-  } else if (msg === 'info tokyo') {
-    div.innerHTML = "Tokyo 🇯🇵 is a dynamic city blending futuristic technology with traditional temples and culture. Global Picks helps travellers find hotels across Tokyo.";
-  } else if (msg === 'info tulum') {
-    div.innerHTML = "Tulum 🇲🇽 is famous for its Caribbean beaches, eco resorts and ancient Mayan ruins overlooking the sea. Global Picks helps travellers find unique stays in Tulum.";
-  } else if (msg === 'info zanzibar') {
-    div.innerHTML = "Zanzibar 🇹🇿 is a tropical island paradise known for white sand beaches, turquoise water and historic Stone Town. Global Picks helps travellers find beachfront hotels across Zanzibar.";
-  }
-
-  // Deals
-  else if (msg === 'deals') {
-    div.innerHTML = "Global Picks specialises in budget-friendly hotel deals across top destinations worldwide. Message us on WhatsApp to get the best options.";
-  }
-
-  // Unknown command
+  } else if (msg === 'deals') {
+    div.innerHTML = "💰 Global Picks specialises in budget-friendly hotel deals across top destinations worldwide. Message us on WhatsApp to get the best options.";
+  } 
+  // Handle destination info: check for "info city" or just city name
   else {
-    div.innerHTML = "Try typing: book, deals, or info + city (example: info Paris).";
+    // Remove "info " if user typed it
+    if (msg.startsWith('info ')) msg = msg.replace('info ', '');
+
+    if (destinations[msg]) {
+      div.innerHTML = destinations[msg];
+    } else {
+      div.innerHTML = "❗ Try typing: book, deals, or info + city (example: info Paris or just Paris).";
+    }
   }
 
   body.appendChild(div);
