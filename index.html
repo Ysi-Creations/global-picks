@@ -118,7 +118,7 @@
   </div>
 </section>
 
-<footer>Powered by Ysi Creations</footer>Powered by Ysi Creations</footer>
+<footer>Powered by Ysi Creations</footer>
 
 <script>
 const toggle=document.getElementById('botToggle');
@@ -134,16 +134,45 @@ toggle.onclick=function(){
 send.onclick=function(){
   const msg=input.value.trim().toLowerCase();
   if(!msg) return;
+
   const div=document.createElement('div');
+
   if(msg==='book'){
-    div.innerHTML="To book a hotel, click the WhatsApp button and send your destination and travel dates.";
-  }else if(msg.startsWith('info')){
-    div.innerHTML="For destination help, please message us on WhatsApp and we will assist you with hotels and local tips.";
-  }else if(msg==='deals'){
-    div.innerHTML="Global Picks specialises in budget‑friendly hotel deals across our listed destinations.";
-  }else{
-    div.innerHTML="Please type: book, info + city, or deals.";
+    div.innerHTML="Great choice! 🌍 Global Picks can help you find budget-friendly hotels. Click the WhatsApp button and send your destination and travel dates.";
   }
+
+  else if(msg==='info paris'){
+    div.innerHTML="Paris 🇫🇷 is famous for the Eiffel Tower, charming cafés, historic landmarks, and world-class museums. Global Picks can help you find affordable hotels in central Paris.";
+  }
+
+  else if(msg==='info dubai'){
+    div.innerHTML="Dubai 🇦🇪 is known for luxury hotels, desert adventures, and the iconic Burj Khalifa. Global Picks can help you find excellent hotel deals across Dubai.";
+  }
+
+  else if(msg==='info bali'){
+    div.innerHTML="Bali 🇮🇩 offers stunning beaches, temples, jungle scenery, and vibrant culture. Global Picks helps travellers find affordable stays across Bali.";
+  }
+
+  else if(msg==='info london'){
+    div.innerHTML="London 🇬🇧 offers historic landmarks like Big Ben, Buckingham Palace, and world-class museums. Global Picks can help you find great hotel deals across the city.";
+  }
+
+  else if(msg==='info new york'){
+    div.innerHTML="New York 🇺🇸 is famous for Times Square, Central Park, Broadway shows, and iconic skyscrapers. Global Picks helps travellers find affordable hotels across NYC.";
+  }
+
+  else if(msg==='info santorini'){
+    div.innerHTML="Santorini 🇬🇷 is known for white-washed buildings, blue domes, and incredible sunsets over the Aegean Sea. Global Picks can help you find beautiful stays across the island.";
+  }
+
+  else if(msg==='deals'){
+    div.innerHTML="Global Picks specialises in budget-friendly hotel deals across top destinations worldwide. Message us on WhatsApp to get the best options.";
+  }
+
+  else{
+    div.innerHTML="Try typing: book, deals, or info + city (example: info Paris).";
+  }
+
   body.appendChild(div);
   input.value='';
   body.scrollTop=body.scrollHeight;
