@@ -8,151 +8,180 @@
   <meta name="keywords" content="budget hotels, cheap hotels worldwide, Dubai hotels, Bali hotels, Paris hotels, Istanbul hotels, New York hotels, Santorini hotels, travel deals, Global Picks travel" />
   <style>
     body{font-family:Arial, sans-serif;margin:0;background:#faf6ef;color:#043b3b;}
+    header img{width:100%;height:auto;object-fit:cover;display:block;}
     .hero{padding:30px;text-align:center;}
+    .hero h1{font-size:32px;margin:0;padding:0;}
+    .hero p{font-size:18px;max-width:650px;margin:12px auto 20px;}
     .btn{background:#e8751a;color:#fff;padding:14px 28px;border-radius:6px;text-decoration:none;font-weight:bold;display:inline-block;}
     .destinations{padding:30px;max-width:1100px;margin:auto;}
+    .destinations h2{font-size:26px;margin-bottom:18px;text-align:center;}
     .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;}
-    .card{background:#fff;border-radius:12px;overflow:hidden;box-shadow:0 6px 20px rgba(0,0,0,0.1);}
-    .card img{width:100%;height:150px;object-fit:cover;}
-    .card .info{padding:12px;text-align:center;font-weight:600;}
+    .card{background:#fff;border-radius:12px;overflow:hidden;box-shadow:0 6px 20px rgba(0,0,0,0.1);transition:transform 0.3s, box-shadow 0.3s;}
+    .card:hover{transform:translateY(-4px);box-shadow:0 12px 24px rgba(0,0,0,0.15);}
+    .card img{width:100%;height:150px;object-fit:cover;display:block;}
+    .card .info{padding:12px;font-size:16px;text-align:center;color:#043b3b;font-weight:600;}
+    footer{text-align:center;margin-top:40px;padding:20px;}
   </style>
 </head>
 <body>
 
-<section class="hero" style="background:#0b8a6a;padding:60px 30px;color:#fff;">
-  <img src="images/global_picks_logo.png" style="width:180px;margin-bottom:18px;" />
-  <h1>Budget-friendly hotel deals across top destinations</h1>
-
-  <p>We find the best hotels and hidden deals so you don’t have to.</p>
-
-  <a class="btn" href="https://wa.me/447881077860?text=Hello%20Global%20Picks%2C%20I%20found%20your%20website%20and%20would%20like%20help%20booking%20a%20hotel." target="_blank" style="background:#ffd700;color:#043b3b;font-weight:900;">
-    Message me on WhatsApp now
-  </a>
+<section class="hero" style="background:#0b8a6a;padding:60px 30px;text-align:center;color:#fff;position:relative;">
+  <img src="images/global_picks_logo.png" alt="Global Picks Logo" style="width:180px;height:auto;object-fit:contain;display:block;margin:auto;margin-bottom:18px;" />
+  <h1 style="font-size:36px;margin:0;">Budget-friendly hotel deals across top destinations</h1>
+  <p style="font-size:18px;max-width:650px;margin:14px auto 20px;">Handpicked hotels, real-time WhatsApp booking support, and curated deals for smart travellers.</p>
+  <a class="btn" href="https://wa.me/447881077860?text=Hello%20Global%20Picks%2C%20I%20found%20your%20website%20and%20would%20like%20help%20booking%20a%20hotel.%20My%20destination%20is%20____%20and%20my%20travel%20dates%20are%20____.%20Please%20assist%20me%20with%20the%20best%20options." target="_blank" style="background:#ffd700;color:#043b3b;font-weight:900;">Book on WhatsApp</a>
 </section>
 
 <section class="destinations">
-  <h2 style="text-align:center;">Top Destinations</h2>
-
+  <h2>Top Destinations</h2>
   <div class="grid">
+    <div class="card"><img src="images/destination1.webp" alt="Antalya Turkey resort deals" /><div class="info">📍 Antalya — Turkey</div></div>
+    <div class="card"><img src="images/destination2.webp" alt="Bali Indonesia beachfront stays" /><div class="info">📍 Bali — Indonesia</div></div>
+    <div class="card"><img src="images/destination3.webp" alt="Bangkok Thailand city hotels" /><div class="info">📍 Bangkok — Thailand</div></div>
+    <div class="card"><img src="images/destination4.webp" alt="Barcelona Spain city hotels" /><div class="info">📍 Barcelona — Spain</div></div>
+    <div class="card"><img src="images/destination5.webp" alt="Cape Town South Africa waterfront hotels" /><div class="info">📍 Cape Town — South Africa</div></div>
+    <div class="card"><img src="images/destination6.webp" alt="Dubai UAE luxury for less" /><div class="info">📍 Dubai — UAE</div></div>
+    <div class="card"><img src="images/destination7.webp" alt="Hurghada Egypt Red Sea resorts" /><div class="info">📍 Hurghada — Egypt</div></div>
+    <div class="card"><img src="images/destination8.webp" alt="Istanbul Turkey old city stays" /><div class="info">📍 Istanbul — Turkey</div></div>
+    <div class="card"><img src="images/destination9.webp" alt="London England city hotels" /><div class="info">📍 London — England</div></div>
+    <div class="card"><img src="images/destination10.webp" alt="Mombasa Kenya beach resorts" /><div class="info">📍 Mombasa — Kenya</div></div>
+    <div class="card"><img src="images/destination11.webp" alt="New York USA affordable hotels" /><div class="info">📍 New York — USA</div></div>
+    <div class="card"><img src="images/destination12.webp" alt="Paris France central hotels" /><div class="info">📍 Paris — France</div></div>
+    <div class="card"><img src="images/destination13.webp" alt="Phuket Thailand beach resorts" /><div class="info">📍 Phuket — Thailand</div></div>
+    <div class="card"><img src="images/destination14.webp" alt="Santorini Greece budget stays" /><div class="info">📍 Santorini — Greece</div></div>
+    <div class="card"><img src="images/destination15.webp" alt="Sharm El Sheikh Egypt diving resorts" /><div class="info">📍 Sharm El Sheikh — Egypt</div></div>
+    <div class="card"><img src="images/destination16.webp" alt="Tokyo Japan city hotels" /><div class="info">📍 Tokyo — Japan</div></div>
+    <div class="card"><img src="images/destination17.webp" alt="Tulum Mexico eco retreats" /><div class="info">📍 Tulum — Mexico</div></div>
+    <div class="card"><img src="images/destination18.webp" alt="Zanzibar Tanzania beach hotels" /><div class="info">📍 Zanzibar — Tanzania</div></div>
+  </div>
+</section>
 
-    <!-- EXAMPLE CARD (ALL 18 DONE BELOW SAME STYLE) -->
-
-    <a href="https://wa.me/447881077860?text=Hi%20Global%20Picks%2C%20I%20want%20hotel%20deals%20in%20Antalya" target="_blank">
-      <div class="card">
-        <img src="images/destination1.webp">
-        <div class="info">📍 Antalya — Turkey<br>
-        <span style="font-size:14px;font-weight:500;">
-        From £45 per night 🌊<br>🏖️ Beachfront hotels & resorts<br>👉 Check Today’s Price
-        </span></div>
-      </div>
-    </a>
-
-    <a href="https://wa.me/447881077860?text=Hi%20Global%20Picks%2C%20I%20want%20hotel%20deals%20in%20Bali" target="_blank">
-      <div class="card"><img src="images/destination2.webp"><div class="info">📍 Bali — Indonesia<br><span style="font-size:14px;">From £25 per night 🌴<br>👉 Check Today’s Price</span></div></div>
-    </a>
-
-    <a href="https://wa.me/447881077860?text=Hi%20Global%20Picks%2C%20I%20want%20hotel%20deals%20in%20Bangkok" target="_blank">
-      <div class="card"><img src="images/destination3.webp"><div class="info">📍 Bangkok — Thailand<br><span style="font-size:14px;">From £20 per night 🏙️<br>👉 Check Today’s Price</span></div></div>
-    </a>
-
-    <a href="https://wa.me/447881077860?text=Hi%20Global%20Picks%2C%20I%20want%20hotel%20deals%20in%20Barcelona" target="_blank">
-      <div class="card"><img src="images/destination4.webp"><div class="info">📍 Barcelona — Spain<br><span style="font-size:14px;">From £60 per night ☀️<br>👉 Check Today’s Price</span></div></div>
-    </a>
-
-    <a href="https://wa.me/447881077860?text=Hi%20Global%20Picks%2C%20I%20want%20hotel%20deals%20in%20Cape%20Town" target="_blank">
-      <div class="card"><img src="images/destination5.webp"><div class="info">📍 Cape Town — South Africa<br><span style="font-size:14px;">From £35 per night 🌍<br>👉 Check Today’s Price</span></div></div>
-    </a>
-
-    <a href="https://wa.me/447881077860?text=Hi%20Global%20Picks%2C%20I%20want%20hotel%20deals%20in%20Dubai" target="_blank">
-      <div class="card"><img src="images/destination6.webp"><div class="info">📍 Dubai — UAE<br><span style="font-size:14px;">From £70 per night 🏙️<br>👉 Check Today’s Price</span></div></div>
-    </a>
-
-    <a href="https://wa.me/447881077860?text=Hi%20Global%20Picks%2C%20I%20want%20hotel%20deals%20in%20Hurghada" target="_blank">
-      <div class="card"><img src="images/destination7.webp"><div class="info">📍 Hurghada — Egypt<br><span style="font-size:14px;">From £30 per night 🌊<br>👉 Check Today’s Price</span></div></div>
-    </a>
-
-    <a href="https://wa.me/447881077860?text=Hi%20Global%20Picks%2C%20I%20want%20hotel%20deals%20in%20Istanbul" target="_blank">
-      <div class="card"><img src="images/destination8.webp"><div class="info">📍 Istanbul — Turkey<br><span style="font-size:14px;">From £35 per night 🕌<br>👉 Check Today’s Price</span></div></div>
-    </a>
-
-    <a href="https://wa.me/447881077860?text=Hi%20Global%20Picks%2C%20I%20want%20hotel%20deals%20in%20London" target="_blank">
-      <div class="card"><img src="images/destination9.webp"><div class="info">📍 London — England<br><span style="font-size:14px;">From £80 per night 🇬🇧<br>👉 Check Today’s Price</span></div></div>
-    </a>
-
-    <a href="https://wa.me/447881077860?text=Hi%20Global%20Picks%2C%20I%20want%20hotel%20deals%20in%20Mombasa" target="_blank">
-      <div class="card"><img src="images/destination10.webp"><div class="info">📍 Mombasa — Kenya<br><span style="font-size:14px;">From £40 per night 🏖️<br>👉 Check Today’s Price</span></div></div>
-    </a>
-
-    <a href="https://wa.me/447881077860?text=Hi%20Global%20Picks%2C%20I%20want%20hotel%20deals%20in%20New%20York" target="_blank">
-      <div class="card"><img src="images/destination11.webp"><div class="info">📍 New York — USA<br><span style="font-size:14px;">From £90 per night 🗽<br>👉 Check Today’s Price</span></div></div>
-    </a>
-
-    <a href="https://wa.me/447881077860?text=Hi%20Global%20Picks%2C%20I%20want%20hotel%20deals%20in%20Paris" target="_blank">
-      <div class="card"><img src="images/destination12.webp"><div class="info">📍 Paris — France<br><span style="font-size:14px;">From £75 per night 🗼<br>👉 Check Today’s Price</span></div></div>
-    </a>
-
-    <a href="https://wa.me/447881077860?text=Hi%20Global%20Picks%2C%20I%20want%20hotel%20deals%20in%20Phuket" target="_blank">
-      <div class="card"><img src="images/destination13.webp"><div class="info">📍 Phuket — Thailand<br><span style="font-size:14px;">From £30 per night 🌴<br>👉 Check Today’s Price</span></div></div>
-    </a>
-
-    <a href="https://wa.me/447881077860?text=Hi%20Global%20Picks%2C%20I%20want%20hotel%20deals%20in%20Santorini" target="_blank">
-      <div class="card"><img src="images/destination14.webp"><div class="info">📍 Santorini — Greece<br><span style="font-size:14px;">From £65 per night 🌅<br>👉 Check Today’s Price</span></div></div>
-    </a>
-
-    <a href="https://wa.me/447881077860?text=Hi%20Global%20Picks%2C%20I%20want%20hotel%20deals%20in%20Sharm%20El%20Sheikh" target="_blank">
-      <div class="card"><img src="images/destination15.webp"><div class="info">📍 Sharm El Sheikh — Egypt<br><span style="font-size:14px;">From £35 per night 🌊<br>👉 Check Today’s Price</span></div></div>
-    </a>
-
-    <a href="https://wa.me/447881077860?text=Hi%20Global%20Picks%2C%20I%20want%20hotel%20deals%20in%20Tokyo" target="_blank">
-      <div class="card"><img src="images/destination16.webp"><div class="info">📍 Tokyo — Japan<br><span style="font-size:14px;">From £70 per night 🏯<br>👉 Check Today’s Price</span></div></div>
-    </a>
-
-    <a href="https://wa.me/447881077860?text=Hi%20Global%20Picks%2C%20I%20want%20hotel%20deals%20in%20Tulum" target="_blank">
-      <div class="card"><img src="images/destination17.webp"><div class="info">📍 Tulum — Mexico<br><span style="font-size:14px;">From £60 per night 🌴<br>👉 Check Today’s Price</span></div></div>
-    </a>
-
-    <a href="https://wa.me/447881077860?text=Hi%20Global%20Picks%2C%20I%20want%20hotel%20deals%20in%20Zanzibar" target="_blank">
-      <div class="card"><img src="images/destination18.webp"><div class="info">📍 Zanzibar — Tanzania<br><span style="font-size:14px;">From £45 per night 🌊<br>👉 Check Today’s Price</span></div></div>
-    </a>
-
+<section class="micro" id="digital-nomad" aria-label="Digital Nomad Guide" style="margin:30px auto;max-width:1100px;padding:20px;background:linear-gradient(180deg,rgba(255,255,255,0.9),rgba(255,255,255,0.95));border-radius:12px;display:flex;gap:16px;align-items:center;box-shadow:0 8px 24px rgba(0,0,0,0.08);">
+  <div class="left" style="flex:1;">
+    <h3 style="margin:0 0 8px;">Global Picks Digital Nomad Guide</h3>
+    <div style="color:#6b6b6b;margin-bottom:10px;">Trusted accommodation, verified local services, and premium excursion support in Dahab.</div>
+    <ul style="margin:8px 0 0;padding-left:18px;color:#6b6b6b;">
+      <li>Secure rentals 🏡</li>
+      <li>Responsible adventure tours 🌍</li>
+      <li>Work-friendly cafés & spaces ☕</li>
+      <li>Transport & essentials 🚖</li>
+    </ul>
+    <div style="margin-top:12px;">
+      <a class="btn" href="https://wa.me/447881077860?text=Hello%20Global%20Picks%2C%20I%20saw%20your%20Digital%20Nomad%20Guide%20and%20would%20like%20some%20help%20with%20Dahab%20services%20or%20accommodation.%20Could%20you%20please%20assist%20me%3F" target="_blank">➡️ Chat Now on WhatsApp</a>
+    </div>
+  </div>
+  <div class="image" style="width:300px;border-radius:10px;overflow:hidden;flex-shrink:0;">
+    <img src="images/digital_nomad.jpg" alt="Digital Nomad in Dahab" style="width:100%;height:180px;object-fit:cover;display:block;" />
   </div>
 </section>
 
 <section style="padding:30px;text-align:center;">
   <h2>Affiliates</h2>
-  <p>Check Out Our Partner Deals 🔥 Hot Deals Weekly — Don’t Miss Out!</p>
-
-  <div style="max-width:900px;margin:auto;text-align:left;display:grid;gap:16px;">
-
-    <div>💪 <strong>Fitness with Jessi</strong><br>
-    Get fit at home or on the go!<br>
-    <a href="https://ysi-creations.github.io/fwj-fitness/?ref=globalpicks" target="_blank">👉 Join Now</a></div>
-
-    <div>✨ <strong>Ysi Creations</strong><br>
-    <a href="https://ko-fi.com/ysicreations?ref=globalpicks" target="_blank">👉 Explore</a></div>
-
-    <div>🛍️ <strong>Ysi Store</strong><br>
-    <a href="https://ysi-creations.printify.me?ref=globalpicks" target="_blank">👉 Shop</a></div>
-
-    <div>📹 <strong>Hohem</strong><br>
-    <a href="https://www.hohem.com/?ref=globalpicks" target="_blank">👉 View Deals</a></div>
-
-    <div>🔐 <strong>SafeShell VPN</strong><br>
-    <a href="https://www.safeshellvpn.com/?ref=globalpicks" target="_blank">👉 Get Protected</a></div>
-
-    <div>🚗 <strong>Rexing</strong><br>
-    <a href="https://rexing.com/?ref=globalpicks" target="_blank">👉 View Deals</a></div>
-
-    <div>🧠 <strong>Talk AI</strong><br>
-    <a href="https://talkpal.ai/get-started/en-gb?ref=globalpicks" target="_blank">👉 Try Now</a></div>
-
-    <div>🛒 <strong>FabFinds</strong><br>
-    <a href="https://fabfinds.co.uk/?ref=globalpicks" target="_blank">👉 Browse</a></div>
-
+  <div style="display:flex;gap:12px;flex-wrap:wrap;justify-content:center;margin-top:12px;">
+    <a class="btn" href="https://ko-fi.com/ysicreations" target="_blank" style="background:#e87428;">Visit Ysi Creations Digital Shop</a>
+    <a class="btn" href="https://ysi-creations.printify.me" target="_blank" style="background:#e87428;">Discover Ysi Creations Store</a>
+    <a class="btn" href="https://ysi-creations.github.io/fwj-fitness/" target="_blank" style="background:#e87428;">Fitness With Jessi</a>
+    <a class="btn" href="https://www.hohem.com/" target="_blank" style="background:#e87428;">Hohem</a>
+    <a class="btn" href="https://www.safeshellvpn.com/" target="_blank" style="background:#e87428;">SafeShell VPN</a>
+    <a class="btn" href="https://rexing.com/" target="_blank" style="background:#e87428;">Rexing</a>
+    <a class="btn" href="https://talkpal.ai/get-started/en-gb" target="_blank" style="background:#e87428;">TalkPal</a>
+    <a class="btn" href="https://fabfinds.co.uk/" target="_blank" style="background:#e87428;">FabFinds</a>
   </div>
 </section>
 
-<footer>© 2025 Global Picks — All Rights Reserved. Powered by Ysi Creations.</footer>
+<a class="whatsapp" href="https://wa.me/447881077860?text=Hi%20Global%20Picks%2C%20I%20saw%20your%20site%20and%20would%20like%20help%20with%20bookings." target="_blank" rel="noopener" aria-label="Chat on WhatsApp" style="position:fixed;left:18px;bottom:18px;background:linear-gradient(180deg,#008C8F,#007976);color:#fff;padding:12px 14px;border-radius:999px;display:flex;gap:10px;align-items:center;text-decoration:none;box-shadow:0 12px 36px rgba(0,0,0,0.18);z-index:60;">💬 WhatsApp</a>
+
+<div class="help-bubble" id="botToggle" style="position:fixed;right:18px;bottom:18px;background:#E87428;color:#fff;padding:10px 12px;border-radius:999px;display:flex;gap:10px;align-items:center;text-decoration:none;box-shadow:0 12px 36px rgba(0,0,0,0.18);z-index:60;">Global Picks Guide</div>
+<div class="bot-panel" id="botPanel" role="dialog" aria-hidden="true" style="position:fixed;right:18px;bottom:78px;width:340px;background:#fff;border-radius:12px;box-shadow:0 18px 50px rgba(0,0,0,0.2);overflow:hidden;display:none;flex-direction:column;z-index:80;">
+  <div class="bot-header" style="background:#008C8F;color:#fff;padding:12px;font-weight:700;">Global Picks Guide</div>
+  <div class="bot-body" id="botBody" style="padding:12px;height:260px;overflow:auto;">
+    <div><strong>Welcome to the Global Picks Guide 🌍</strong><br>Your friendly travel guide is here to help you discover great hotel deals and useful destination tips.</div>
+    <ul>
+      <li>How to book (type: book)</li>
+      <li>Destination info (type: info + city)</li>
+      <li>Deals & support (type: deals)</li>
+    </ul>
+  </div>
+  <div class="bot-input" style="display:flex;border-top:1px solid #eee;">
+    <input id="botInput" placeholder="Type 'book' or 'info Paris'" style="flex:1;padding:10px;border:0;" />
+    <button id="botSend" style="background:#E87428;color:#fff;border:0;padding:10px 12px;">Send</button>
+  </div>
+</div>
+
+<section style="padding:30px;text-align:center;background:#fff;">
+  <h2>What Customers Are Saying</h2>
+  <div style="max-width:900px;margin:20px auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px;">
+    <div style="background:#faf6ef;padding:18px;border-radius:10px;box-shadow:0 6px 18px rgba(0,0,0,0.08);">⭐️⭐️⭐️⭐️⭐️<br>"Global Picks helped me find a great hotel deal quickly. The WhatsApp support was fast and very helpful."<br><strong>— Mr D and Mrs Sarah Wright, Sheffield, England.</strong></div>
+    <div style="background:#faf6ef;padding:18px;border-radius:10px;box-shadow:0 6px 18px rgba(0,0,0,0.08);">⭐️⭐️⭐️⭐️⭐️<br>"Excellent recommendations and budget friendly options for travellers."<br><strong>— Daniel K, USA.</strong></div>
+    <div style="background:#faf6ef;padding:18px;border-radius:10px;box-shadow:0 6px 18px rgba(0,0,0,0.08);">⭐️⭐️⭐️⭐️⭐️<br>"Simple, reliable and saved me hours searching for accommodation."<br><strong>— Katomi Tokyo, Japan.</strong></div>
+      <div style="background:#faf6ef;padding:18px;border-radius:10px;box-shadow:0 6px 18px rgba(0,0,0,0.08);">⭐️⭐️⭐️⭐️⭐️<br>"We are so happy we came across Global Picks — it saved us the hassle of searching for accommodation ourselves. They helped us find a suitable and affordable place to stay, and we were absolutely delighted with it."<br><strong>— Jules and Ambre, Paris, France.</strong></div>
+  </div>
+</section>
+
+<footer>© 2025 Global Picks — All Rights Reserved. Powered by Ysi Creations. Global Picks may earn commissions from some partner links at no additional cost to you.</footer>
+
+<script>
+const toggle = document.getElementById('botToggle');
+const panel = document.getElementById('botPanel');
+const send = document.getElementById('botSend');
+const input = document.getElementById('botInput');
+const body = document.getElementById('botBody');
+
+toggle.onclick = function() {
+  panel.style.display = panel.style.display === 'flex' ? 'none' : 'flex';
+};
+
+// City info database
+const destinations = {
+  "antalya": "Antalya 🇹🇷 is a beautiful Mediterranean resort city known for turquoise beaches, luxury resorts and historic old town streets. Global Picks helps travellers find excellent value hotels across Antalya.",
+  "bali": "Bali 🇮🇩 offers tropical beaches, temples, rice terraces and vibrant culture. Global Picks helps travellers discover affordable hotels across Bali's best locations.",
+  "bangkok": "Bangkok 🇹🇭 is a vibrant city famous for street food, temples, markets and nightlife. Global Picks can help you find budget-friendly hotels across Bangkok.",
+  "barcelona": "Barcelona 🇪🇸 is known for Gaudí architecture, sunny beaches and lively culture. Global Picks helps travellers find great hotel deals across the city.",
+  "cape town": "Cape Town 🇿🇦 offers incredible scenery with Table Mountain, beaches and vineyards. Global Picks helps travellers find affordable stays across Cape Town.",
+  "dubai": "Dubai 🇦🇪 is known for luxury hotels, desert adventures and the iconic Burj Khalifa. Global Picks helps travellers find excellent hotel deals across Dubai.",
+  "hurghada": "Hurghada 🇪🇬 is a Red Sea resort destination famous for diving, snorkelling and beautiful beaches. Global Picks helps travellers find great value resorts in Hurghada.",
+  "istanbul": "Istanbul 🇹🇷 is a historic city where Europe meets Asia, famous for mosques, bazaars and rich culture. Global Picks helps travellers find hotels across Istanbul.",
+  "london": "London 🇬🇧 offers historic landmarks like Big Ben, Buckingham Palace and world class museums. Global Picks helps travellers find affordable hotels across London.",
+  "mombasa": "Mombasa 🇰🇪 is a tropical coastal city known for white sand beaches, coral reefs and Swahili culture. Global Picks helps travellers find beachfront hotels in Mombasa.",
+  "new york": "New York 🇺🇸 is famous for Times Square, Central Park, Broadway and iconic skyscrapers. Global Picks helps travellers find great hotel deals across New York.",
+  "paris": "Paris 🇫🇷 is famous for the Eiffel Tower, charming cafés and world class museums like the Louvre. Global Picks helps travellers find great hotels across Paris.",
+  "phuket": "Phuket 🇹🇭 is Thailand's largest island known for tropical beaches, nightlife and island hopping. Global Picks helps travellers find excellent resorts in Phuket.",
+  "santorini": "Santorini 🇬🇷 is famous for whitewashed villages, blue domes and breathtaking sunsets over the Aegean Sea. Global Picks helps travellers find beautiful stays across Santorini.",
+  "sharm": "Sharm El Sheikh 🇪🇬 is a popular Red Sea destination known for diving, coral reefs and luxury resorts. Global Picks helps travellers find great hotel deals in Sharm.",
+  "tokyo": "Tokyo 🇯🇵 is a dynamic city blending futuristic technology with traditional temples and culture. Global Picks helps travellers find hotels across Tokyo.",
+  "tulum": "Tulum 🇲🇽 is famous for its Caribbean beaches, eco resorts and ancient Mayan ruins overlooking the sea. Global Picks helps travellers find unique stays in Tulum.",
+  "zanzibar": "Zanzibar 🇹🇿 is a tropical island paradise known for white sand beaches, turquoise water and historic Stone Town. Global Picks helps travellers find beachfront hotels across Zanzibar."
+};
+
+send.onclick = function() {
+  let msg = input.value.trim().toLowerCase();
+  if (!msg) return;
+
+  const div = document.createElement('div');
+
+  // Handle 'book' and 'deals' commands
+  if (msg === 'book') {
+    div.innerHTML = "🌟 Great choice! Global Picks can help you find budget-friendly hotels. Click the WhatsApp button and send your destination and travel dates.";
+  } else if (msg === 'deals') {
+    div.innerHTML = "💰 Global Picks specialises in budget-friendly hotel deals across top destinations worldwide. Message us on WhatsApp to get the best options.";
+  } 
+  // Handle destination info: check for "info city" or just city name
+  else {
+    // Remove "info " if user typed it
+    if (msg.startsWith('info ')) msg = msg.replace('info ', '');
+
+    if (destinations[msg]) {
+      div.innerHTML = destinations[msg];
+    } else {
+      div.innerHTML = "❗ Try typing: book, deals, or info + city (example: info Paris or just Paris).";
+    }
+  }
+
+  body.appendChild(div);
+  input.value = '';
+  body.scrollTop = body.scrollHeight;
+};
+</script>
 
 </body>
 </html>
