@@ -1,4 +1,4 @@
-<!doctype html>  
+<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
@@ -25,21 +25,17 @@
   </style>
 </head>
 <body>
-
 <section class="hero" style="background:#0b8a6a;padding:60px 30px;text-align:center;color:#fff;position:relative;">
   <img src="images/global_picks_logo.png" alt="Global Picks Logo" style="width:180px;height:auto;object-fit:contain;display:block;margin:auto;margin-bottom:18px;" />
   <h1 style="font-size:36px;margin:0;">Budget-friendly hotel deals across top destinations</h1>
   <p style="font-size:18px;max-width:650px;margin:14px auto 20px;">We find the best hotels and hidden deals so you don’t have to.</p>
   <a class="btn" href="https://wa.me/447881077860?text=Hello%20Global%20Picks%2C%20I%20would%20like%20help%20finding%20the%20best%20hotel%20deal%20please." target="_blank" style="background:#ffd700;color:#043b3b;font-weight:900;">Message me on WhatsApp now...</a>
 </section>
-
 <section class="destinations">
   <h2>Top Destinations</h2>
-
   <div style="text-align:center;margin-bottom:16px;font-weight:600;">
     💡 Tip: Use the <strong>Global Picks Guide</strong> (bottom right) — type <strong>“info + city”</strong> or <strong>“book”</strong> for instant help.
   </div>
-
   <div class="grid">
     <div class="card"><a href="https://wa.me/447881077860?text=Hi%20Global%20Picks%2C%20please%20send%20me%20the%20best%20hotel%20deals%20for%20Antalya%20%F0%9F%98%8A" target="_blank"><img src="images/destination1.webp" alt="Antalya Turkey resort deals" /><div class="info">📍 Antalya — Turkey 🇹🇷</div><div class="cta-text">Tap to get the best deal</div></a></div>
     <div class="card"><a href="https://wa.me/447881077860?text=Hi%20Global%20Picks%2C%20please%20send%20me%20the%20best%20hotel%20deals%20for%20Bali%20%F0%9F%98%8A" target="_blank"><img src="images/destination2.webp" alt="Bali Indonesia beachfront stays" /><div class="info">📍 Bali — Indonesia 🇮🇩</div><div class="cta-text">Tap to get the best deal</div></a></div>
@@ -61,7 +57,6 @@
     <div class="card"><a href="https://wa.me/447881077860?text=Hi%20Global%20Picks%2C%20please%20send%20me%20the%20best%20hotel%20deals%20for%20Zanzibar%20%F0%9F%98%8A" target="_blank"><img src="images/destination18.webp" alt="Zanzibar Tanzania beach hotels" /><div class="info">📍 Zanzibar — Tanzania 🇹🇿</div><div class="cta-text">Tap to get the best deal</div></a></div>
   </div>
 </section>
-
 <section class="micro" id="digital-nomad" aria-label="Digital Nomad Guide" style="margin:30px auto;max-width:1100px;padding:20px;background:linear-gradient(180deg,rgba(255,255,255,0.9),rgba(255,255,255,0.95));border-radius:12px;display:flex;gap:16px;align-items:center;box-shadow:0 8px 24px rgba(0,0,0,0.08);">
   <div class="left" style="flex:1;">
     <h3 style="margin:0 0 8px;">Global Picks Digital Nomad Guide</h3>
@@ -80,7 +75,6 @@
     <img src="images/digital_nomad.jpg" alt="Digital Nomad in Dahab" style="width:100%;height:180px;object-fit:cover;display:block;" />
   </div>
 </section>
-
 <section style="padding:30px;text-align:center;">
   <h2>Affiliates</h2>
   <p><strong>Check Out Our Partner Deals 🔥 Hot Deals Weekly — Don’t Miss Out!</strong></p>
@@ -95,12 +89,13 @@
     <a class="btn" href="https://fabfinds.co.uk/" target="_blank" style="padding:18px;">FabFinds 👉 Hot Deals</a>
   </div>
 </section>
-
 <a class="whatsapp" href="https://wa.me/447881077860?text=Hi%20Global%20Picks%2C%20I%20saw%20your%20site%20and%20would%20like%20help%20with%20bookings." target="_blank" rel="noopener" aria-label="Chat on WhatsApp" style="position:fixed;left:18px;bottom:18px;background:linear-gradient(180deg,#008C8F,#007976);color:#fff;padding:12px 14px;border-radius:999px;display:flex;gap:10px;align-items:center;text-decoration:none;box-shadow:0 12px 36px rgba(0,0,0,0.18);z-index:60;">💬 WhatsApp</a>
-
 <div class="help-bubble" id="botToggle" style="position:fixed;right:18px;bottom:18px;background:#E87428;color:#fff;padding:10px 12px;border-radius:999px;display:flex;gap:10px;align-items:center;text-decoration:none;box-shadow:0 12px 36px rgba(0,0,0,0.18);z-index:60;">Global Picks Guide</div>
 <div class="bot-panel" id="botPanel" role="dialog" aria-hidden="true" style="position:fixed;right:18px;bottom:78px;width:340px;background:#fff;border-radius:12px;box-shadow:0 18px 50px rgba(0,0,0,0.2);overflow:hidden;display:none;flex-direction:column;z-index:80;">
-  <div class="bot-header" style="background:#008C8F;color:#fff;padding:12px;font-weight:700;">Global Picks Guide</div>
+  <div class="bot-header" style="background:#008C8F;color:#fff;padding:12px;font-weight:700;display:flex;justify-content:space-between;align-items:center;">
+    Global Picks Guide
+    <span id="botClose" style="cursor:pointer;font-size:22px;line-height:1;padding:0 8px;">×</span>
+  </div>
   <div class="bot-body" id="botBody" style="padding:12px;height:260px;overflow:auto;">
     <div><strong>Welcome to the Global Picks Guide 🌍</strong><br>Your friendly travel guide is here to help you discover great hotel deals and useful destination tips.</div>
     <ul>
@@ -114,7 +109,6 @@
     <button id="botSend" style="background:#E87428;color:#fff;border:0;padding:10px 12px;">Send</button>
   </div>
 </div>
-
 <section style="padding:30px;text-align:center;background:#fff;">
   <h2>What Customers Are Saying</h2>
   <div style="max-width:900px;margin:20px auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px;">
@@ -124,18 +118,22 @@
     <div style="background:#faf6ef;padding:18px;border-radius:10px;box-shadow:0 6px 18px rgba(0,0,0,0.08);">⭐️⭐️⭐️⭐️⭐️<br>"We are so happy we came across Global Picks — it saved us the hassle of searching for accommodation ourselves. They helped us find a suitable and affordable place to stay, and we were absolutely delighted with it."<br><strong>— Jules and Ambre, Paris, France.</strong></div>
   </div>
 </section>
-
 <footer>© 2025 Global Picks — All Rights Reserved. Powered by Ysi Creations. Global Picks may earn commissions from some partner links at no additional cost to you.</footer>
-
 <script>
 const toggle = document.getElementById('botToggle');
 const panel = document.getElementById('botPanel');
 const send = document.getElementById('botSend');
 const input = document.getElementById('botInput');
 const body = document.getElementById('botBody');
+const closeBtn = document.getElementById('botClose');
 
 toggle.onclick = function() {
   panel.style.display = panel.style.display === 'flex' ? 'none' : 'flex';
+};
+
+// Close button functionality
+closeBtn.onclick = function() {
+  panel.style.display = 'none';
 };
 
 const destinations = {
@@ -158,39 +156,28 @@ const destinations = {
   "tulum": "Tulum 🇲🇽 is famous for its Caribbean beaches, eco resorts and ancient Mayan ruins overlooking the sea. Global Picks helps travellers find unique stays in Tulum.",
   "zanzibar": "Zanzibar 🇹🇿 is a tropical island paradise known for white sand beaches, turquoise water and historic Stone Town. Global Picks helps travellers find beachfront hotels across Zanzibar."
 };
-
 send.onclick = function() {
   let msg = input.value.trim().toLowerCase();
   if (!msg) return;
-
   const div = document.createElement('div');
-
   if (msg === 'book') {
     div.innerHTML = "🌟 Great choice! Global Picks can help you find budget-friendly hotels. Click the WhatsApp button and send your destination and travel dates.";
   } else if (msg === 'deals') {
     div.innerHTML = "💰 Global Picks specialises in budget-friendly hotel deals across top destinations worldwide. Message us on WhatsApp to get the best options.";
   } else {
     if (msg.startsWith('info ')) msg = msg.replace('info ', '');
-
     if (destinations[msg]) {
       div.innerHTML = destinations[msg];
     } else {
       div.innerHTML = "❗ Try typing: book, deals, or info + city (example: info Paris or just Paris).";
     }
   }
-
   body.appendChild(div);
   input.value = '';
   body.scrollTop = body.scrollHeight;
 };
 </script>
-
 </body>
 </html>
-```
-
-
-
-
 
 
