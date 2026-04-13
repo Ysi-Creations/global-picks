@@ -90,10 +90,10 @@
     </div>
   </section>
   <a class="whatsapp" href="https://wa.me/447881077860?text=Hi%20Global%20Picks%2C%20I%20saw%20your%20site%20and%20would%20like%20help%20with%20bookings." target="_blank" rel="noopener" aria-label="Chat on WhatsApp" style="position:fixed;left:18px;bottom:18px;background:linear-gradient(180deg,#008C8F,#007976);color:#fff;padding:12px 14px;border-radius:999px;display:flex;gap:10px;align-items:center;text-decoration:none;box-shadow:0 12px 36px rgba(0,0,0,0.18);z-index:60;">💬 WhatsApp</a>
-  
+ 
   <!-- Global Picks Guide Bot -->
   <div class="help-bubble" id="botToggle" style="position:fixed;right:18px;bottom:18px;background:#E87428;color:#fff;padding:10px 12px;border-radius:999px;display:flex;gap:10px;align-items:center;text-decoration:none;box-shadow:0 12px 36px rgba(0,0,0,0.18);z-index:60;">Global Picks Guide</div>
-  
+ 
   <div class="bot-panel" id="botPanel" role="dialog" aria-hidden="true" style="position:fixed;right:18px;bottom:78px;width:340px;background:#fff;border-radius:12px;box-shadow:0 18px 50px rgba(0,0,0,0.2);overflow:hidden;display:none;flex-direction:column;z-index:80;">
     <div class="bot-header" style="background:#008C8F;color:#fff;padding:12px;font-weight:700;display:flex;justify-content:space-between;align-items:center;">
       Global Picks Guide
@@ -112,7 +112,6 @@
       <button id="botSend" style="background:#E87428;color:#fff;border:0;padding:10px 12px;">Send</button>
     </div>
   </div>
-
   <section style="padding:30px;text-align:center;background:#fff;">
     <h2>What Customers Are Saying</h2>
     <div style="max-width:900px;margin:20px auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px;">
@@ -135,7 +134,6 @@
   toggle.onclick = function() {
     panel.style.display = panel.style.display === 'flex' ? 'none' : 'flex';
   };
-
   closeBtn.onclick = function() {
     panel.style.display = 'none';
   };
@@ -159,6 +157,28 @@
     "tokyo": "Tokyo 🇯🇵 is a dynamic city blending futuristic technology with traditional temples and culture. Global Picks helps travellers find hotels across Tokyo.",
     "tulum": "Tulum 🇲🇽 is famous for its Caribbean beaches, eco resorts and ancient Mayan ruins overlooking the sea. Global Picks helps travellers find unique stays in Tulum.",
     "zanzibar": "Zanzibar 🇹🇿 is a tropical island paradise known for white sand beaches, turquoise water and historic Stone Town. Global Picks helps travellers find beachfront hotels across Zanzibar."
+  };
+
+  // === NEW SECTION: Country Information for SEO & Better User Experience ===
+  const countryInfo = {
+    "antalya": "🇹🇷 <strong>Turkey</strong> is a transcontinental country bridging Europe and Asia. It boasts a rich history spanning the Ottoman Empire, Byzantine era, and ancient civilizations. Known for its diverse landscapes, from stunning Mediterranean and Aegean coastlines to Cappadocia’s fairy chimneys and bustling cities, Turkey offers incredible culture, cuisine (kebabs, baklava, Turkish tea), and warm hospitality.",
+    "bali": "🇮🇩 <strong>Indonesia</strong> is the world’s largest archipelago with over 17,000 islands. It is famous for its volcanic landscapes, rich Hindu-Buddhist heritage, incredible biodiversity, and warm tropical climate. Indonesia is a melting pot of cultures, known for its friendly people, world-class surfing, diving, and diverse cuisine including nasi goreng and satay.",
+    "bangkok": "🇹🇭 <strong>Thailand</strong>, known as the “Land of Smiles,” is famous for its golden temples, stunning beaches, delicious street food, and vibrant nightlife. It offers a perfect mix of modern cities and ancient traditions, with incredible value for travellers and one of the most welcoming cultures in Southeast Asia.",
+    "barcelona": "🇪🇸 <strong>Spain</strong> is a passionate Mediterranean country known for its flamenco, tapas, world-class football, and rich artistic heritage (Picasso, Dalí, Gaudí). With over 300 sunny days a year, beautiful coastlines, and vibrant festivals, Spain remains one of Europe’s most loved travel destinations.",
+    "cape town": "🇿🇦 <strong>South Africa</strong> is often called the “Rainbow Nation” due to its cultural diversity. It features dramatic landscapes including Table Mountain, beautiful wine regions, wild safari parks, and long sandy beaches. South Africa is a top destination for adventure, wildlife, and cultural experiences.",
+    "dubai": "🇦🇪 <strong>United Arab Emirates</strong> is a modern, forward-thinking federation in the Arabian Peninsula. Known for its futuristic architecture, luxury shopping, man-made islands, and desert safaris, the UAE offers a unique blend of traditional Arabian hospitality and ultra-modern lifestyle.",
+    "hurghada": "🇪🇬 <strong>Egypt</strong> is home to one of the world’s oldest civilizations. Famous for the Pyramids of Giza, the Nile River, ancient temples, and the Red Sea’s world-class diving and snorkelling, Egypt offers a perfect mix of history, culture, and beach relaxation.",
+    "istanbul": "🇹🇷 <strong>Turkey</strong> is a transcontinental country bridging Europe and Asia. It boasts a rich history spanning the Ottoman Empire, Byzantine era, and ancient civilizations. Known for its diverse landscapes, from stunning Mediterranean and Aegean coastlines to Cappadocia’s fairy chimneys and bustling cities, Turkey offers incredible culture, cuisine (kebabs, baklava, Turkish tea), and warm hospitality.",
+    "london": "🇬🇧 <strong>United Kingdom</strong> is a historic island nation with a global influence in culture, politics, and finance. England (where London is located) is known for its royal heritage, world-class museums, theatre scene, iconic landmarks, and classic British experiences like afternoon tea and pubs.",
+    "mombasa": "🇰🇪 <strong>Kenya</strong> is famous for its incredible wildlife safaris, vast savannas, and beautiful Indian Ocean coastline. It offers a rich Swahili coastal culture, warm hospitality, and is one of Africa’s top destinations for beach and safari combinations.",
+    "new york": "🇺🇸 <strong>United States of America</strong> is a vast and diverse country known as a global leader in innovation, entertainment, and culture. From bustling cities and iconic landmarks to vast national parks and varied cuisine, the USA offers endless experiences for travellers.",
+    "paris": "🇫🇷 <strong>France</strong> is renowned worldwide for its art, fashion, cuisine, and romance. As one of Europe’s cultural powerhouses, it offers world-famous museums (Louvre), historic landmarks, fine wine regions, beautiful countryside, and the elegant capital of Paris.",
+    "phuket": "🇹🇭 <strong>Thailand</strong>, known as the “Land of Smiles,” is famous for its golden temples, stunning beaches, delicious street food, and vibrant nightlife. It offers a perfect mix of modern cities and ancient traditions, with incredible value for travellers and one of the most welcoming cultures in Southeast Asia.",
+    "santorini": "🇬🇷 <strong>Greece</strong> is the cradle of Western civilization, known for its ancient ruins (Acropolis), stunning islands, crystal-clear waters, delicious Mediterranean cuisine (olive oil, feta, souvlaki), and warm Greek hospitality.",
+    "sharm": "🇪🇬 <strong>Egypt</strong> is home to one of the world’s oldest civilizations. Famous for the Pyramids of Giza, the Nile River, ancient temples, and the Red Sea’s world-class diving and snorkelling, Egypt offers a perfect mix of history, culture, and beach relaxation.",
+    "tokyo": "🇯🇵 <strong>Japan</strong> is a fascinating country that perfectly blends ancient traditions with cutting-edge technology. Known for its respectful culture, world-class cuisine (sushi, ramen, kaiseki), efficient transport, beautiful temples, and unique pop culture, Japan offers unforgettable travel experiences.",
+    "tulum": "🇲🇽 <strong>Mexico</strong> is a vibrant country rich in history, culture, and natural beauty. Famous for its ancient Mayan and Aztec ruins, stunning Caribbean and Pacific beaches, delicious cuisine (tacos, mole, guacamole), lively festivals, and warm Mexican hospitality.",
+    "zanzibar": "🇹🇿 <strong>Tanzania</strong> is known for its incredible wildlife (Serengeti, Ngorongoro Crater), Mount Kilimanjaro, and the spice island of Zanzibar. It offers a perfect combination of safari adventures and relaxing tropical beach getaways with rich Swahili culture."
   };
 
   send.onclick = function() {
@@ -185,7 +205,7 @@
     }
     else {
       if (msg.startsWith('info ')) msg = msg.replace('info ', '');
-      
+     
       // Auto-detect city
       let city = msg;
       let found = false;
@@ -196,13 +216,23 @@
           break;
         }
       }
+
       if (found && destinations[city]) {
-        div.innerHTML = destinations[city] + `<br><br>✨ Would you like to book something here?<br><br>
+        let response = destinations[city];
+
+        // Add the new Country Information section
+        if (countryInfo[city]) {
+          response += `<br><br><strong>More about the country:</strong><br>${countryInfo[city]}`;
+        }
+
+        response += `<br><br>✨ Would you like to book something here?<br><br>
         Just reply with:<br>
         • <strong>Hotel + ${city}</strong><br>
         • <strong>Excursion + ${city}</strong><br>
         • <strong>Package + ${city}</strong><br><br>
         Our friendly concierge will ask for your dates & details and help you book smoothly via WhatsApp.`;
+
+        div.innerHTML = response;
       } else {
         div.innerHTML = "❗ No problem! Try typing:<br><br>• <strong>book</strong> — to start a booking<br>• <strong>info + city</strong> (e.g. info Paris)<br>• <strong>deals</strong> — for special offers<br><br>I'm here to help make your trip easy and affordable! 😊";
       }
