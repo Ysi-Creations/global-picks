@@ -90,7 +90,10 @@
     </div>
   </section>
   <a class="whatsapp" href="https://wa.me/447881077860?text=Hi%20Global%20Picks%2C%20I%20saw%20your%20site%20and%20would%20like%20help%20with%20bookings." target="_blank" rel="noopener" aria-label="Chat on WhatsApp" style="position:fixed;left:18px;bottom:18px;background:linear-gradient(180deg,#008C8F,#007976);color:#fff;padding:12px 14px;border-radius:999px;display:flex;gap:10px;align-items:center;text-decoration:none;box-shadow:0 12px 36px rgba(0,0,0,0.18);z-index:60;">💬 WhatsApp</a>
+  
+  <!-- Global Picks Guide Bot -->
   <div class="help-bubble" id="botToggle" style="position:fixed;right:18px;bottom:18px;background:#E87428;color:#fff;padding:10px 12px;border-radius:999px;display:flex;gap:10px;align-items:center;text-decoration:none;box-shadow:0 12px 36px rgba(0,0,0,0.18);z-index:60;">Global Picks Guide</div>
+  
   <div class="bot-panel" id="botPanel" role="dialog" aria-hidden="true" style="position:fixed;right:18px;bottom:78px;width:340px;background:#fff;border-radius:12px;box-shadow:0 18px 50px rgba(0,0,0,0.2);overflow:hidden;display:none;flex-direction:column;z-index:80;">
     <div class="bot-header" style="background:#008C8F;color:#fff;padding:12px;font-weight:700;display:flex;justify-content:space-between;align-items:center;">
       Global Picks Guide
@@ -109,6 +112,7 @@
       <button id="botSend" style="background:#E87428;color:#fff;border:0;padding:10px 12px;">Send</button>
     </div>
   </div>
+
   <section style="padding:30px;text-align:center;background:#fff;">
     <h2>What Customers Are Saying</h2>
     <div style="max-width:900px;margin:20px auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px;">
@@ -119,6 +123,7 @@
     </div>
   </section>
   <footer>© 2025 Global Picks — All Rights Reserved. Powered by Ysi Creations. Global Picks may earn commissions from some partner links at no additional cost to you.</footer>
+
   <script>
   const toggle = document.getElementById('botToggle');
   const panel = document.getElementById('botPanel');
@@ -126,10 +131,11 @@
   const input = document.getElementById('botInput');
   const body = document.getElementById('botBody');
   const closeBtn = document.getElementById('botClose');
+
   toggle.onclick = function() {
     panel.style.display = panel.style.display === 'flex' ? 'none' : 'flex';
   };
-  // Close button functionality
+
   closeBtn.onclick = function() {
     panel.style.display = 'none';
   };
@@ -163,27 +169,26 @@
     div.style.marginBottom = "12px";
 
     if (msg === 'book') {
-      div.innerHTML = `🌟 Perfect! Global Picks now offers three booking options for any city:<br><br>
-      1️⃣ <strong>Hotel Only</strong> — Just accommodation<br>
-      2️⃣ <strong>Excursion Only</strong> — Tours & activities<br>
-      3️⃣ <strong>Hotel + Excursion Package</strong> — Best value combo<br><br>
-      Which one would you like? Or simply tell me the city and your preference.<br><br>
-      <strong>Reply with:</strong><br>
-      • Hotel + city<br>
-      • Excursion + city<br>
-      • Package + city<br><br>
-      Our concierge will then ask smart follow-up questions (dates, number of people, etc.) and guide you smoothly to WhatsApp for instant booking.`;
-    } 
+      div.innerHTML = `🌟 Hi there! Let's make your booking super easy 😊<br><br>
+      You can choose:<br><br>
+      1️⃣ <strong>Hotel Only</strong> — Just comfortable accommodation<br>
+      2️⃣ <strong>Excursion Only</strong> — Fun tours & activities<br>
+      3️⃣ <strong>Hotel + Excursion Package</strong> — Best value (most popular!)<br><br>
+      <strong>Just reply with:</strong><br>
+      • <strong>Hotel + city</strong> (example: Hotel Dubai)<br>
+      • <strong>Excursion + city</strong> (example: Excursion Bali)<br>
+      • <strong>Package + city</strong> (example: Package Paris)<br><br>
+      Tell me your travel dates and how many people, and I'll guide you smoothly to WhatsApp for quick booking!`;
+    }
     else if (msg === 'deals') {
       div.innerHTML = "💰 Global Picks specialises in Affordable Hotel & Excursion Deals in Top Travel Destinations Worldwide. Message us on WhatsApp to get the best options.";
-    } 
+    }
     else {
       if (msg.startsWith('info ')) msg = msg.replace('info ', '');
       
       // Auto-detect city
       let city = msg;
       let found = false;
-
       for (let key in destinations) {
         if (city.includes(key)) {
           city = key;
@@ -191,15 +196,15 @@
           break;
         }
       }
-
       if (found && destinations[city]) {
-        div.innerHTML = destinations[city] + `<br><br>💡 Would you like:<br>
-        1. Hotel deals only<br>
-        2. Excursion options<br>
-        3. A full hotel + excursion package?<br><br>
-        Just reply with your choice + any dates or details, and I'll guide you to the best WhatsApp booking.`;
+        div.innerHTML = destinations[city] + `<br><br>✨ Would you like to book something here?<br><br>
+        Just reply with:<br>
+        • <strong>Hotel + ${city}</strong><br>
+        • <strong>Excursion + ${city}</strong><br>
+        • <strong>Package + ${city}</strong><br><br>
+        Our friendly concierge will ask for your dates & details and help you book smoothly via WhatsApp.`;
       } else {
-        div.innerHTML = "❗ Try typing: book, deals, or info + city (example: info Paris or just Paris).<br><br>Or type 'book' to see our new Hotel / Excursion / Package options.";
+        div.innerHTML = "❗ No problem! Try typing:<br><br>• <strong>book</strong> — to start a booking<br>• <strong>info + city</strong> (e.g. info Paris)<br>• <strong>deals</strong> — for special offers<br><br>I'm here to help make your trip easy and affordable! 😊";
       }
     }
 
